@@ -73,7 +73,7 @@
 
   window.switchSrc = (element, name) => {
     const base = "https://github.com/jasimmj/USDZ-File-Host/blob/main/CesiumMilkTruck" + name;
-    modelViewer.src = base + '.glb';
+    modelViewer.src = base + '.glb?raw=true';
     
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
